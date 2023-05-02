@@ -16,6 +16,7 @@ public class Player {
         this.exp = exp;
         this.critical = critical;
         this.money=money;
+
     }
     public int getHp() {return hp;}
     public int getDefaultAttack() {return defaultAttack;}

@@ -102,6 +102,8 @@ public class Main {
             //  증감 연산자 -> 변수의 값을 1 증가 시키거나 감소시킬 수 있음. ( ++, -- )
             //      후순위(변수를 먼저 원래값을 사용하고 증가) , 선순위(증가 시키고 사용)
 
+
+
             System.out.println("총 몬스터 처치 횟수: " + (++allCnt));       // allCnt가 왜 누적이 안될까? 1,2,3,4,5
         }
         return monsters.getHp();
