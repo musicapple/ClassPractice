@@ -1,14 +1,14 @@
-package game;
+package game3;
 
 import java.util.Random;
 
 public class Monster {
-    private final String name; // 이름은 변경되지 않는다. (명시)
+    private final String name;
     private int hp;
     private final int defaultAttack;
     private final int specialAttack;
     private final int exp;
-    private int cnt = 0;
+    private int cnt;
     private int allCnt;
     private final int minMoney;
     private final int maxMoney;

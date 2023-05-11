@@ -1,4 +1,4 @@
-package game;
+package game3;
 
 public class Player {
     private int hp;
@@ -10,6 +10,7 @@ public class Player {
     private int money;
     private int level;
     private int maxHp;
+
 
     public Player(int hp, int defaultAttack, int specialAttack, int exp, int critical, int money, int maxExp, int level, int maxHp) {
         this.hp = hp;
@@ -54,11 +55,12 @@ public class Player {
 
     public void setExp(int exp) {
         if (exp >= maxExp) {
-            int sub = maxExp - exp; // 5
+            int sub = maxExp - exp;
             levelUp();
             this.exp = sub;
+        } else {
+            this.exp = exp;
         }
-        else this.exp = exp;
     }
 
     public int getCritical() {
